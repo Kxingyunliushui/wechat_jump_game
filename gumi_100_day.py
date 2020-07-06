@@ -13,7 +13,7 @@ def jump(distance):
 
 
 eventlet.monkey_patch()  # 必须加这条代码
-with eventlet.Timeout(5 * 60, False):  # 设置超时时间为2秒
+with eventlet.Timeout(20 * 60, False):  # 设置超时时间为2秒
     while True:
         jump(2)
         time.sleep(random.randint(5,15))
