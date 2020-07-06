@@ -1,3 +1,4 @@
+eventlet
 backports.functools-lru-cache==1.4
 cycler==0.10.0
 matplotlib==2.1.1
