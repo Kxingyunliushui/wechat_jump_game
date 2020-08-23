@@ -12,7 +12,7 @@ def jump(distance):
     rate = (now - start_time)/(16 * 60)
     time_now = time.localtime(now)
     timestr = time.strftime("%Y-%m-%d %H:%M:%S", time_now)
-    strstr = "cmd=%s, time=%s, rate:%2f%%" % (cmd, timestr, rate)
+    strstr = "cmd=%s, time=%s, rate:%0.2f%%" % (cmd, timestr, rate*100)
     print(strstr)
 
     os.system(cmd)
